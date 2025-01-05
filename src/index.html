@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/Images/favicon.ico.jpg"
+      type="image/x-icon"
+    />
+    <title>Airlines Flight Ticket | Best Agent For Visa Assitance</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .slider-container {
+        position: relative;
+      }
+      .slider-wrapper {
+        display: flex;
+      }
+      .slide {
+        flex: 0 0 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            src="./Assets/Images/allicom travels logo.png"
+            alt="Travel Logo"
+            class="h-10 w-auto"
+          />
+          <a href="#" class="text-2xl font-bold text-indigo-600"
+            >Allicom Travels</a
+          >
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="text-gray-600 hover:text-indigo-600">Home</a>
+          <a href="#" class="text-gray-600 hover:text-indigo-600"
+            >Visa Assistance</a
+          >
+          <a href="#" class="text-gray-600 hover:text-indigo-600"
+            >Study Abroad</a
+          >
+          <a href="#services" class="text-gray-600 hover:text-indigo-600"
+            >Services</a
+          >
+          <a href="#contact" class="text-gray-600 hover:text-indigo-600"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger Icon -->
+        <button
+          id="hamburger-icon"
+          class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden fixed inset-0 bg-white z-40 bg-opacity-90 flex justify-center items-center"
+        style="display: none"
+      >
+        <div class="w-full max-w-xs p-6">
+          <nav class="space-y-6">
+            <a href="#home" class="text-gray-600 hover:text-indigo-600 block"
+              >Home</a
+            >
+            <a href="#" class="text-gray-600 hover:text-indigo-600 block"
+              >Visa Assistance</a
+            >
+            <a href="#" class="text-gray-600 hover:text-indigo-600 block"
+              >Study Abroad</a
+            >
+            <a
+              href="#services"
+              class="text-gray-600 hover:text-indigo-600 block"
+              >Services</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 block"
+              >Contact</a
+            >
+          </nav>
+          <button
+            onclick="toggleMenu()"
+            class="absolute top-4 right-4 text-gray-600"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section
+      id="home"
+      class="relative bg-cover bg-center h-screen animate-zoom"
+    >
+      <!-- Slider container -->
+      <div class="absolute inset-0">
+        <div class="slider-container h-full w-full overflow-hidden relative">
+          <!-- Slider images -->
+          <div
+            class="slider-wrapper h-full w-full flex transition-transform duration-1000"
+          >
+            <!-- Clone of last slide for seamless transition -->
+            <div
+              class="slide bg-cover bg-center h-full w-full"
+              style="
+                background-image: url('./Assets/Images/pexels-nastyasensei-66707-335393.jpg');
+              "
+            ></div>
+            <div
+              class="slide bg-cover bg-center h-full w-full"
+              style="
+                background-image: url('./Assets/Images/full-shot-travel-concept-with-landmarks.jpg');
+              "
+            ></div>
+            <div
+              class="slide bg-cover bg-center h-full w-full"
+              style="
+                background-image: url('./Assets/Images/pexels-freestockpro-1004584.jpg');
+              "
+            ></div>
+            <div
+              class="slide bg-cover bg-center h-full w-full"
+              style="
+                background-image: url('./Assets/Images/pexels-nastyasensei-66707-335393.jpg');
+              "
+            ></div>
+            <!-- Clone of first slide for seamless transition -->
+            <div
+              class="slide bg-cover bg-center h-full w-full"
+              style="
+                background-image: url('./Assets/Images/full-shot-travel-concept-with-landmarks.jpg');
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <!-- Content -->
+      <div
+        class="container mx-auto px-6 relative z-10 flex flex-col justify-center items-center h-full text-center text-white"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          Live the Life of Your Dreams
+        </h1>
+        <p class="text-lg md:text-xl mb-8">
+          Explore any destination of your choice with ease and comfort.
+        </p>
+        <a
+          href="#book"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg shadow-md text-lg"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="book" class="bg-gray-100 py-12 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-center text-3xl md:text-4xl font-semibold text-blue-600"
+        >
+          Plan Your Next Trip
+        </h2>
+        <p class="text-center text-lg md:text-xl text-blue-500 mt-2">
+          We cover the entire trip: flight ticket, hotel, visa, transfers &
+          insurance.
+        </p>
+
+        <!-- Search Form -->
+        <div class="mt-8 bg-white shadow-lg rounded-lg p-6 md:p-8">
+          <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Row 1 -->
+            <div>
+              <label
+                for="departure-city"
+                class="block text-sm font-medium text-gray-600"
+                >Departure City</label
+              >
+              <input
+                type="text"
+                id="departure-city"
+                placeholder="Enter city"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+            <div>
+              <label
+                for="arrival-city"
+                class="block text-sm font-medium text-gray-600"
+                >Arrival City</label
+              >
+              <input
+                type="text"
+                id="arrival-city"
+                placeholder="Enter city"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+            <div>
+              <label
+                for="departure-date"
+                class="block text-sm font-medium text-gray-600"
+                >Departure Date *</label
+              >
+              <input
+                type="date"
+                id="departure-date"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+                onchange="setMinReturnDate()"
+              />
+            </div>
+
+            <!-- Row 2 -->
+            <div>
+              <label
+                for="return-date"
+                class="block text-sm font-medium text-gray-600"
+                >Return Date</label
+              >
+              <input
+                type="date"
+                id="return-date"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+                onchange="setMinReturnDate()"
+              />
+            </div>
+            <div>
+              <label
+                for="adults"
+                class="block text-sm font-medium text-gray-600"
+                >Adult No</label
+              >
+              <input
+                type="number"
+                id="adults"
+                placeholder="Number of adults"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+            <div>
+              <label
+                for="children"
+                class="block text-sm font-medium text-gray-600"
+                >Child No</label
+              >
+              <input
+                type="number"
+                id="children"
+                placeholder="Number of children"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+
+            <!-- Row 3 -->
+            <div>
+              <label for="class" class="block text-sm font-medium text-gray-600"
+                >Class</label
+              >
+              <select
+                id="class"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              >
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="services"
+                class="block text-sm font-medium text-gray-600"
+                >Services</label
+              >
+              <select
+                id="services"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              >
+                <option>Flight Ticket Only</option>
+                <option>Flight Ticket & Hotel</option>
+                <option>Visa, Flight & Hotel</option>
+                <option>Vacation Packages</option>
+                <option>Insurance Only</option>
+              </select>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-600"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+
+            <!-- Row 4 -->
+            <div>
+              <label
+                for="full-name"
+                class="block text-sm font-medium text-gray-600"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter your name"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+            <div>
+              <label
+                for="mobile"
+                class="block text-sm font-medium text-gray-600"
+                >Mobile</label
+              >
+              <input
+                type="tel"
+                id="mobile"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                placeholder="Enter your mobile number"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-blue-500"
+              />
+            </div>
+            <div
+              class="flex items-center justify-center mt-6 md:mt-0 md:col-span-3"
+            >
+              <button
+                type="submit"
+                class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg shadow-md"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="bg-white py-12 px-4">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+        <!-- Welcome Message -->
+        <div class="flex-1">
+          <h2
+            class="text-2xl md:text-3xl font-bold text-blue-600 border-b-4 border-blue-300 inline-block pb-2"
+          >
+            Welcome to Allicom Travels
+          </h2>
+          <p class="text-gray-700 mt-4 leading-8 tracking-wider text-justify">
+            Discover the world with us! At Allicom Travels, we’re more than just
+            a travel agency – we’re your ultimate travel partner, offering
+            tailored solutions to make your adventures unforgettable. From
+            expert visa advisory and consultation to securing the best deals on
+            flights, hotels, cruises, and tours, we’ve got you covered!
+          </p>
+          <p class="text-gray-700 mt-2 leading-8 tracking-wider text-justify">
+            As a proudly incorporated limited liability company, approved by the
+            Civil Aviation Authority (CAA) and the International Air Transport
+            Association (IATA), we take your travel dreams seriously. But here’s
+            the twist – we bring the fun, the excitement, and that personal
+            touch that makes your journey truly special. Our agents aren’t just
+            reservation-makers; they’re seasoned travelers with firsthand
+            knowledge of the destinations we book, ensuring your experience is
+            nothing short of amazing.
+          </p>
+          <div id="extra-content" class="hidden lg:block">
+            <p class="text-gray-700 mt-2 leading-8 tracking-wider text-justify">
+              Whether you're booking a flight, reserving a hotel, planning a
+              dream tour, booking a cruise, enjoying a beach break, or seeking a
+              theme park adventure, we offer a variety of packages and services
+              to suit your needs. Need a chauffeur ride or insurance for peace
+              of mind? We've got you! We’ll take care of the details so you can
+              kick back, relax, and focus on the fun ahead.
+            </p>
+            <p class="text-gray-700 mt-2 leading-8 tracking-wider text-justify">
+              At Allicom Travels, we believe in more than just making
+              reservations – we’re here to create memories. Contact us today and
+              let’s make your next trip one to remember!
+            </p>
+          </div>
+          <button
+            id="read-more-btn"
+            class="lg:hidden text-blue-500 font-semibold"
+            onclick="toggleContent()"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 px-4 bg-gray-100">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Services</h2>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="service-grid">
+          <!-- Flight Booking -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img
+              src="./Assets/Images/pexels-tdcat-69866.jpg"
+              alt="Flight Booking"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Flight Booking
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Book flights to any destination of your choice with ease.
+            </p>
+          </div>
+
+          <!-- Visa Assistance -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img
+              src="./Assets/Images/pexels-n-voitkevich-7235894.jpg"
+              alt="Visa Assistance"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Visa Assistance
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Get professional visa assistance for any country.
+            </p>
+          </div>
+
+          <!-- Tour Packages -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <img
+              src="./Assets/Images/young-happy-hipster-couple-love-traveling-around-world.jpg"
+              alt="Tour Packages"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Tour Packages
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Discover tailored packages for memorable experiences.
+            </p>
+          </div>
+
+          <!-- Cruise Booking -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/full-shot-woman-working-laptop.jpg"
+              alt="Cruise Booking"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Cruise Booking
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Book luxurious cruises to breathtaking destinations.
+            </p>
+          </div>
+
+          <!-- Hotel Booking -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/pexels-quang-nguyen-vinh-222549-29000012.jpg"
+              alt="Hotel Booking"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Hotel Booking
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Reserve comfortable accommodations for your stay.
+            </p>
+          </div>
+
+          <!-- Transfer/Car Hire -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/stylish-black-woman-car-salon.jpg"
+              alt="Transfer/Car Hire"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Transfer/Car Hire
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Get reliable transfers and car rentals for your travels.
+            </p>
+          </div>
+
+          <!-- Study Abroad Service -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/pexels-a-k-bissue-846189586-29558433.jpg"
+              alt="Study Abroad Service"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Study Abroad Service
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Explore opportunities for studying abroad with ease.
+            </p>
+          </div>
+
+          <!-- Immigration Service -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/pexels-mrborys-8061980.jpg"
+              alt="Immigration Service"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Immigration Service
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Receive expert guidance on immigration procedures.
+            </p>
+          </div>
+
+          <!-- Insurance Service -->
+          <div class="bg-white p-6 rounded-lg shadow-md hidden">
+            <img
+              src="./Assets/Images/pexels-mikhail-nilov-8297425.jpg"
+              alt="Insurance Service"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+            <h3 class="text-lg font-semibold text-gray-800 mt-4">
+              Insurance Service
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Get travel insurance for a worry-free journey.
+            </p>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-8 text-center">
+          <button
+            class="bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700"
+            onclick="loadMore()"
+            id="load-more-btn"
+          >
+            Load More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------  Tour Section  -------------- -->
+
+    <div class="bg-gray-100 py-12 px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold uppercase">Most Popular Tours</h2>
+        <p class="text-gray-500 mt-2 max-w-7xl mx-auto">
+          Discover some of the most exciting and memorable travel experiences
+          from around the world. These tours are carefully curated to give you
+          the adventure of a lifetime
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="./Assets/Images/pexels-antone-adi-1348018-2611104.jpg"
+            alt="Gaudi's City"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Gaudi's City</h3>
+            <div class="flex items-center text-sm text-gray-600 mb-3">
+              <span class="mr-2">7.5 Superb</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4 tracking-wider text-justify">
+              Explore the breathtaking architecture of Barcelona, highlighted by
+              Antoni Gaudí's iconic works like Park Güell and Sagrada Família. A
+              must-see for art and culture lovers.
+            </p>
+            <div class="flex items-center justify-between">
+              <p class="line-through text-gray-400 text-sm">N 2,700,000</p>
+              <p class="text-green-500 font-bold">N 2,500,000</p>
+            </div>
+            <div class="mt-4 flex items-center justify-between text-sm">
+              <div class="flex items-center">
+                <span class="text-gray-500">📅 15 Days</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-gray-500">👥 14+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="./Assets/Images/pexels-sergey-sh-1439367-2775742.jpg"
+            alt="Venice Canals"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Venice Canals</h3>
+            <div class="flex items-center text-sm text-gray-600 mb-3">
+              <span class="mr-2">8.3 Superb</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4 tracking-wider text-justify">
+              Sail through the charming canals of Venice, soak in the romantic
+              atmosphere, and enjoy the historical beauty of Italy's floating
+              city.
+            </p>
+            <p class="text-green-500 font-bold">N 1,400,000</p>
+            <div class="mt-4 flex items-center justify-between text-sm">
+              <div class="flex items-center">
+                <span class="text-gray-500">📅 15 Days</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-gray-500">👥 14+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="./Assets/Images/medium-shot-happy-friends-taking-selfie.jpg"
+            alt="City Selfie Tour"
+            class="w-full h-60 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">City Selfie Tour</h3>
+            <div class="flex items-center text-sm text-gray-600 mb-3">
+              <span class="mr-2">7.0 Superb</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4 tracking-wider text-justify">
+              Capture unforgettable memories as you tour the best selfie spots
+              in the city. A fun and interactive way to explore urban landmarks
+              with friends.
+            </p>
+            <p class="text-green-500 font-bold">N 1,400,000</p>
+            <div class="mt-4 flex items-center justify-between text-sm">
+              <div class="flex items-center">
+                <span class="text-gray-500">📅 6 Days</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-gray-500">👥 12+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------- -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-50 py-12 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact Us</h2>
+
+        <!-- Contact Info & Form -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Contact Information (Address and Map) -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold text-sky-800 mb-4">
+              Get In Touch
+            </h3>
+
+            <!-- Address Information -->
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-sky-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+                  />
+                </svg>
+
+                <p class="ml-3 text-sky-700">
+                  61 Okesuna Street, Lagos Island, 102273, Lagos, Nigeria.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-sky-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+                  />
+                </svg>
+
+                <p class="ml-3 text-sky-700">
+                  190 Broad Street, Lagos Island, 102273, Lagos, Nigeria.
+                </p>
+              </div>
+
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-sky-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+
+                <p class="ml-3 text-sky-700">08067663986, 08071729330</p>
+              </div>
+
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-sky-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <p class="ml-3 text-sky-700">hello@allicomtravels.com</p>
+              </div>
+            </div>
+
+            <!-- Google Map -->
+            <h3 class="text-2xl font-semibold text-sky-800 mb-4">
+              Our Location
+            </h3>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.206379204817!2d3.404914!3d6.451564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b3b651b453b%3A0x12bd56715c8c7306!2s61%20Okesuna%20St%2C%20off%20Pike%20Street%2C%20Lagos%20Island%2C%20Lagos%20102273%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1736037484526!5m2!1sen!2sus"
+              class="w-full h-80 rounded-lg"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold text-sky-800 mb-4">
+              Send Us a Message
+            </h3>
+            <form action="#" method="POST" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- First Name -->
+                <div class="flex flex-col">
+                  <label for="first-name" class="text-sky-700"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+
+                <!-- Last Name -->
+                <div class="flex flex-col">
+                  <label for="last-name" class="text-sky-700">Last Name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex flex-col">
+                <label for="email" class="text-sky-700">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+
+              <!-- Phone Number -->
+              <div class="flex flex-col">
+                <label for="phone" class="text-sky-700">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+
+              <!-- Option Field -->
+              <div class="flex flex-col">
+                <label for="option" class="text-sky-700">Select Option</label>
+                <select
+                  id="option"
+                  name="option"
+                  class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="service1">Dubai Visa (UAE Visa)</option>
+                  <option value="service2">Flight Ticket</option>
+                  <option value="service3">Hotel Booking</option>
+                  <option value="service4">Tour Package</option>
+                  <option value="service5">Visa Assitance</option>
+                  <option value="service6">Travel Guide</option>
+                  <option value="service7">Car Hire</option>
+                  <option value="service8">Study Abroad</option>
+                  <option value="service9">Immigration Service</option>
+                  <option value="service0">Insurance Service</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="flex flex-col">
+                <label for="message" class="text-sky-700">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  class="mt-2 px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mt-4 text-center">
+                <button
+                  type="submit"
+                  class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-28"
+      >
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-indigo-400">Travel Updates</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Visa Assitance</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Tours Packages</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Study Abroad</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">Insurance Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-indigo-400">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">
+            Subscribe to Our Newsletter
+          </h3>
+          <p class="mb-4">Stay updated with our latest news and offers.</p>
+          <form action="#" method="POST">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 w-full rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+            <button
+              type="submit"
+              class="mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex flex-col items-start">
+          <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-6">
+            <a
+              href="https://web.facebook.com/allicomtravels"
+              class="text-white hover:text-indigo-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="white"
+              >
+                <path
+                  d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/allicomtravels"
+              class="text-white hover:text-indigo-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="h-6 w-6"
+                fill="white"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://x.com/allicomtravels"
+              class="text-white hover:text-indigo-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="white"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/allicom-travels/posts/?feedView=all"
+              class="text-white hover:text-indigo-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="white"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Our Address</h3>
+          <p>61 Okesuna Street, Lagos Island, 102273, Lagos, Nigeria</p>
+          <br />
+          <p>Email: hello@allicomtravels.com</p>
+          <br />
+          <p>Phone: 08067663986, 08071729330</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 border-t pt-6">
+        <p class="text-sm text-gray-400">
+          &copy; 2025 Allicom Travels. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./Assets/JS/script.js"></script>
+  </body>
+</html>
